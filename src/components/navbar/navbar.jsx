@@ -1,7 +1,7 @@
 import React from 'react'
 import './navbar.scss'
 import { NavLink } from 'react-router-dom'
-import { ReactComponent as Logo } from '../../assets/logo.svg'
+import { ReactComponent as Logo } from '../../assets/shared/desktop/logo.svg'
 import SquareBtn from '../square-btn/square-btn'
 
 const Navbar = () => {
