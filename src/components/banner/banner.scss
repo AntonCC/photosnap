@@ -1,5 +1,6 @@
 .banner {
-  // width: 1440px;
+  margin: 0 auto;
+  max-width: 1440px;
   height: 630px;
   display: flex;
   .side-a {
@@ -9,6 +10,10 @@
     background: #000;
     color: #fff;
     width: 40%;
+    &.bg-white {
+      background: #fff;
+      color: #000;
+    }
     .wrap {
       max-width: 38.7rem;
       h1 {
@@ -26,6 +31,15 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+  // Switch sides of img and text
+  &.switch {
+    .side-a {
+      order: 2;
+    }
+    .side-b {
+      order: 1;
     }
   }
 }

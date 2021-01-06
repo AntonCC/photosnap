@@ -1,0 +1,25 @@
+.button {
+  display: flex;
+  align-items: center;
+  h4 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 2rem;
+  }
+  svg {
+    height: 12px;
+    width: 42px;
+    // stroke: red;
+    path {
+      stroke: #fff;
+    }
+  }
+  &.black {
+    h4 {
+      color: #000;
+    }
+    svg path {
+      stroke: #000;
+    }
+  }
+}

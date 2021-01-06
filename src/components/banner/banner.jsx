@@ -1,19 +1,25 @@
 import React from 'react'
 import './banner.scss'
-import Pic from '../../assets/home/desktop/create-and-share.jpg'
+import Button from '../button/button'
 
-const Banner = () => {
+
+const Banner = ({ title, body, img,  btnText, bgWhite, switchSide }) => {
   return (
-    <div className='banner'>
-      <div className="side-a">
+    <div className={`banner ${switchSide ? 'switch' : ''}`}>
+      <div className={`side-a ${bgWhite ? 'bg-white' : ''} `}>
         <div className="wrap">
-          <h1>Create and share your photo stories.</h1>
-          <p>Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.</p>
-          <button>Get an Invite</button>
+          <h1>{ title }</h1>
+          <p>{ body }</p>
+          <Button bgWhite={bgWhite} >
+            <h4>{ btnText }</h4>
+          </Button>
         </div>
       </div>
       <div className="side-b">
-        <img src={Pic} />
+        <picture>
+          {/* <source media='(max-width: 1000px)' srcset={Hero} /> */}
+          <img src={ img } />
+        </picture>
       </div>
     </div>
   )

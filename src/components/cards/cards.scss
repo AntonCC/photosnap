@@ -1,0 +1,6 @@
+.cards {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
