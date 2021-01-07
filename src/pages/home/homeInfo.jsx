@@ -1,6 +1,12 @@
+// banner imgs
 import Man from '../../assets/home/desktop/create-and-share.jpg'
 import Laptop from '../../assets/home/desktop/beautiful-stories.jpg'
 import Design from '../../assets/home/desktop/designed-for-everyone.jpg'
+// card imgs
+import Mountain from '../../assets/stories/desktop/mountains.jpg'
+import City from '../../assets/stories/desktop/cityscapes.jpg'
+import Days from '../../assets/stories/desktop/18-days-voyage.jpg'
+import Architecture from '../../assets/stories/desktop/architecturals.jpg'
 
 export const bannerInfo = [
   {
@@ -24,4 +30,27 @@ export const bannerInfo = [
     btnText: 'View the stories',
     bgWhite: true
   }
+]
+
+export const cardInfo = [
+  {
+    title: 'The Mountains',
+    author: 'John Appleseed',
+    img: Mountain
+  },
+  {
+    title: 'Sunset Cityscapes',
+    author: 'Benjamin Cruz',
+    img: City
+  },
+  {
+    title: '18 Days Voyage',
+    author: 'Alexei Borodin',
+    img: Days
+  },
+  {
+    title: 'Architecturals',
+    author: 'Samantha Brooke',
+    img: Architecture
+  },
 ]

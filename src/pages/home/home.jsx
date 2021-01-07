@@ -2,7 +2,8 @@ import React from 'react'
 import Banner from '../../components/banner/banner'
 import Cards from '../../components/cards/cards'
 import Card from '../../components/card/card'
-import { bannerInfo } from './homeInfo'
+import Gems from '../../components/gems/gems'
+import { bannerInfo, cardInfo } from './homeInfo'
 
 const Home = () => {
   return (
@@ -13,11 +14,15 @@ const Home = () => {
         ))
       }
       <Cards>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {
+          cardInfo.map(info => (
+            <Card {...info} />
+          ))
+        }
       </Cards>
+      <Gems>
+        <h1>Testing</h1>
+      </Gems>
     </div>
   )
 }
