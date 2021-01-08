@@ -1,0 +1,48 @@
+.footer {
+  background: #000;
+  padding: 6.4rem 17.1rem;
+  .inner {
+    display: flex;
+    position: relative;
+    .logo {
+      margin-right: 11rem;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        &:not(:last-child) {
+          margin-bottom: 1.9rem;
+        }
+        a {
+          font-weight: 700;
+          color: #fff;
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+      }
+    }
+    .socials {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      svg {
+        margin-right: 1rem;
+        path {
+          fill: #fff;
+        }
+      }
+    }
+    .btn {
+      position: absolute;
+      right: 0;
+    }
+    .copyright {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      color: #fff;
+    }
+  }
+}

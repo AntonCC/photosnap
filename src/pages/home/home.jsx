@@ -3,6 +3,7 @@ import Banner from '../../components/banner/banner'
 import Cards from '../../components/cards/cards'
 import Card from '../../components/card/card'
 import Gems from '../../components/gems/gems'
+import Gem from '../../components/gem/gem'
 import { bannerInfo, cardInfo } from './homeInfo'
 
 const Home = () => {
@@ -21,7 +22,9 @@ const Home = () => {
         }
       </Cards>
       <Gems>
-        <h1>Testing</h1>
+        <Gem />
+        <Gem />
+        <Gem />
       </Gems>
     </div>
   )

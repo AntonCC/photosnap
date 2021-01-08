@@ -3,6 +3,7 @@ import './App.scss';
 import { Switch, Route } from 'react-router-dom'
 import Home from './pages/home/home'
 import Navbar from './components/navbar/navbar'
+import Footer from './components/footer/footer'
 
 const routes = [
   {path: '/', name: 'Home', component: Home}
@@ -19,6 +20,7 @@ const App = () => {
           ))
         }
       </Switch>
+      <Footer />
     </div>
   );
 }

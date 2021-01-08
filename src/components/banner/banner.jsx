@@ -5,7 +5,7 @@ import Button from '../button/button'
 
 const Banner = ({ title, body, img,  btnText, bgWhite, switchSide }) => {
   return (
-    <div className={`banner ${switchSide ? 'switch' : ''}`}>
+    <div className={`banner wrap ${switchSide ? 'switch' : ''}`}>
       <div className={`side-a ${bgWhite ? 'bg-white' : ''} `}>
         <div className="wrap">
           <h1>{ title }</h1>

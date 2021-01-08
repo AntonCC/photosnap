@@ -3,7 +3,7 @@ import './cards.scss'
 
 const Cards = ({ children }) => {
   return (
-    <div className='cards'>
+    <div className='cards wrap'>
       { children }
     </div>
   )
