@@ -7,6 +7,10 @@ import Mountain from '../../assets/stories/desktop/mountains.jpg'
 import City from '../../assets/stories/desktop/cityscapes.jpg'
 import Days from '../../assets/stories/desktop/18-days-voyage.jpg'
 import Architecture from '../../assets/stories/desktop/architecturals.jpg'
+// gem imgs
+import Tablet from '../../assets/features/desktop/responsive.svg'
+import NoLimit from '../../assets/features/desktop/no-limit.svg'
+import Embed from '../../assets/features/desktop/embed.svg'
 
 export const bannerInfo = [
   {
@@ -52,5 +56,23 @@ export const cardInfo = [
     title: 'Architecturals',
     author: 'Samantha Brooke',
     img: Architecture
+  },
+]
+
+export const gemInfo = [
+  {
+    title: '100% Responsive',
+    body: 'No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.',
+    img: Tablet
+  },
+  {
+    title: 'No Photo Upload Limit',
+    body: 'Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.',
+    img: NoLimit
+  },
+  {
+    title: 'Available To Embed',
+    body: 'Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.',
+    img: Embed
   },
 ]

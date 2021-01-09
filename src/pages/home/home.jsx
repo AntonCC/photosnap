@@ -4,7 +4,7 @@ import Cards from '../../components/cards/cards'
 import Card from '../../components/card/card'
 import Gems from '../../components/gems/gems'
 import Gem from '../../components/gem/gem'
-import { bannerInfo, cardInfo } from './homeInfo'
+import { bannerInfo, cardInfo, gemInfo } from './homeInfo'
 
 const Home = () => {
   return (
@@ -22,9 +22,11 @@ const Home = () => {
         }
       </Cards>
       <Gems>
-        <Gem />
-        <Gem />
-        <Gem />
+        {
+          gemInfo.map(info => (
+            <Gem {...info} />
+          ))
+        }
       </Gems>
     </div>
   )

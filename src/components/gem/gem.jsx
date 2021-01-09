@@ -2,14 +2,14 @@ import React from 'react'
 import './gem.scss'
 import Test from '../../assets/features/desktop/responsive.svg'
 
-const Gem = () => {
+const Gem = ({ title, body, img}) => {
   return (
     <div className='gem'>
       <div className="img">
-        <img src={Test} alt=""/>
+        <img src={ img } alt=""/>
       </div>
-      <h3>100% Responsive</h3>
-      <p>No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.</p>
+      <h3>{ title }</h3>
+      <p>{ body }</p>
     </div>
   )
 }
