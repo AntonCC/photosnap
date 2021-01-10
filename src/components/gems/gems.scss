@@ -5,3 +5,12 @@
   justify-content: space-between;
   align-items: baseline;
 }
+
+@media only screen and (max-width: 950px) {
+  .gems {
+    padding: 4rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
