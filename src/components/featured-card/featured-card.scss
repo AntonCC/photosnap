@@ -1,0 +1,35 @@
+.featured-card {
+  // height: 650px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #111;
+  padding: 11.2rem;
+  .text {
+    width: 387px;
+    height: 406px;
+    color: #fff;
+    .intro {
+      margin-bottom: 2.4rem;
+    }
+    .title {
+      margin-bottom: 1.6rem;
+    }
+    .description {
+      margin-bottom: 2.4rem;
+    }
+    .date-author {
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 2.4rem;
+      p {
+        margin-right: 1.5rem;
+      }
+      strong {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+      }
+    }
+  }
+}

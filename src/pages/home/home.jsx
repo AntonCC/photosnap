@@ -4,11 +4,11 @@ import Cards from '../../components/cards/cards'
 import Card from '../../components/card/card'
 import Gems from '../../components/gems/gems'
 import Gem from '../../components/gem/gem'
-import { bannerInfo, cardInfo, gemInfo } from './homeInfo'
+import { bannerInfo, cardInfo, gemInfo } from './home-info'
 
 const Home = () => {
   return (
-    <div className='home'>
+    <div className='home wrap'>
       {
         bannerInfo.map(info => (
           <Banner {...info} />

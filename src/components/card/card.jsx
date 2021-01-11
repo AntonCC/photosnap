@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './card.scss'
 import Button from '../button/button'
-// import Test from '../../assets/stories/desktop/calm-waters.jpg'
 
 
 const Card = ({ title, author, img }) => {

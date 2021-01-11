@@ -3,7 +3,7 @@ import './gems.scss'
 
 const Gems = ({ children }) => {
   return (
-    <div className='gems wrap'>
+    <div className='gems'>
       {children}
     </div>
   )
