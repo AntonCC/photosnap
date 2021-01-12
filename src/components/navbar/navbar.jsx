@@ -17,7 +17,7 @@ const Navbar = () => {
           <ul>
             <li><NavLink to='/stories'>Stories</NavLink></li>
             <li><NavLink to='/features'>Features</NavLink></li>
-            <li><NavLink to='/'>Pricing</NavLink></li>
+            <li><NavLink to='/pricing'>Pricing</NavLink></li>
           </ul>
         </div>
         <SquareBtn>

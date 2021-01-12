@@ -1,9 +1,9 @@
 import React from 'react'
 import './square-btn.scss'
 
-const SquareBtn = ({ children }) => {
+const SquareBtn = ({ inverse, children }) => {
   return (
-    <button className='square-btn'>
+    <button className={`square-btn ${inverse ? 'inverse' : ''}`}>
       { children }
     </button>
   )

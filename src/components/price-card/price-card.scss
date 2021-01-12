@@ -1,0 +1,39 @@
+.price-card {
+  height: 407px;
+  width: 350px;
+  padding: 4.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #F5F5F5;
+  position: relative;
+  &.active {
+    height: 470px;
+    background: #000;
+    color: #fff;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0%;
+      height: 7px;
+      width: 100%;
+      background: linear-gradient(to right, rgba(255,197,147,1) 0%, rgba(188,113,152,1) 55%, rgba(90,119,255,1) 100%);
+    }
+  }
+  .plan {
+    margin-bottom: 1.8rem;
+    text-align: center;
+  }
+  .description {
+    margin-bottom: 4.4rem;
+    text-align: center;
+  }
+  .price {
+    text-align: center;
+  }
+  .per-month {
+    margin-bottom: 3.9rem;
+    text-align: center;
+  }
+}
