@@ -10,9 +10,18 @@
     color: #fff;
     width: 65rem;
     padding: 4rem;
+    position: relative;
     &.bg-white {
       background: #fff;
       color: #000;
+    }
+    &.side-stripe::after {
+      position: absolute;
+      left: 0;
+      content: '';
+      height: 50%;
+      width: 7px;
+      background: linear-gradient(to top, rgba(255,197,147,1) 0%, rgba(188,113,152,1) 55%, rgba(90,119,255,1) 100%);
     }
     .wrap {
       max-width: 38.7rem;

@@ -3,13 +3,14 @@ import './banner.scss'
 import Button from '../button/button'
 
 
-const Banner = ({ title, body, img, btnText, bgWhite, switchSide }) => {
+const Banner = ({ title, body, img, btnText, bgWhite, switchSide, sideStripe }) => {
+
   return (
     <div className={`banner ${switchSide ? 'switch' : ''}`}>
-      <div className={`side-a ${bgWhite ? 'bg-white' : ''} `}>
+      <div className={`side-a ${bgWhite ? 'bg-white' : ''} ${sideStripe ? 'side-stripe' : ''}`}>
         <div className="wrap">
           <h1>{ title }</h1>
-          <p style={ !btnText ? {marginBottom: 0} : null}>{ body }</p>
+          <p style={!btnText ? {marginBottom: 0} : null}>{ body }</p>
           {
             btnText && (
               <Button bgWhite={bgWhite} >

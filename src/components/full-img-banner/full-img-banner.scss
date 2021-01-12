@@ -1,0 +1,21 @@
+.full-img-banner {
+  // height: 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7.8rem 16.5rem;
+  position: relative;
+  &::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    height: 100%;
+    width: 7px;
+    background: linear-gradient(to top, rgba(255,197,147,1) 0%, rgba(188,113,152,1) 55%, rgba(90,119,255,1) 100%);
+  }
+  h1 {
+    color: #fff;
+    max-width: 400px;
+    text-transform: uppercase;
+  }
+}
