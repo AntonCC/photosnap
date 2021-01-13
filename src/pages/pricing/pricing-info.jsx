@@ -11,17 +11,20 @@ export const priceInfo = [
   {
     title: 'Basic',
     body: 'Includes basic usage of our platform. Recommended for new and aspiring photographers.',
-    price: '$19.00'
+    priceMonth: '$19.00',
+    priceYear: '$190.00'
   },
   {
     title: 'Pro',
     body: 'More advanced features available. Recommended for photography veterans and professionals.',
-    price: '$39.00',
+    priceMonth: '$39.00',
+    priceYear: '$390.00',
     active: true
   },
   {
     title: 'Business',
     body: 'Additional features available such as more detailed metrics. Recommended for business owners.',
-    price: '$99.00'
+    priceMonth: '$99.00',
+    priceYear: '$990.00'
   },
 ]

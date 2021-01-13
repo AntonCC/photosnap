@@ -1,9 +1,18 @@
 .prices {
-  padding: 12rem 0;
+  padding: 12rem 2rem;
   .price-cards {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .prices {
+    padding: 12rem 3.9rem;
+    .price-cards {
+      flex-direction: column;
+    }
   }
 }
