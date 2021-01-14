@@ -1,0 +1,31 @@
+.table {
+  max-width: 730px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  // justify-content: center;
+  // align-items: center;
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5.6rem;
+  }
+  .content {
+    width: 100%;
+    .tiers {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding-bottom: 2.3rem;
+      border-bottom: 1px solid #333;
+      text-align: center;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: 'first x1 x2 x3';
+      padding: 2.3rem 0;
+      text-align: center;
+      border-bottom: 1px solid #dfdfdf;
+    }
+  }
+}
