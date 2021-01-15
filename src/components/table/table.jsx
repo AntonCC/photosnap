@@ -10,13 +10,13 @@ const Table = () => {
       </h1>
       <div className="content">
         <div className="tiers">
-          <p className='first'>The Features</p>
-          <p className='feature'>Basic</p>
-          <p className='feature'>Pro</p>
-          <p className='feature'>Business</p>
+          <h4 className='first'>The Features</h4>
+          <h4 className='feature'>Basic</h4>
+          <h4 className='feature'>Pro</h4>
+          <h4 className='feature'>Business</h4>
         </div>
         <div className="row story">
-          <p className='first'>Unlimited Story Posting</p>
+          <h4 className='first'>Unlimited Story Posting</h4>
           <div className='check x1'>
             <img src={Check} />
           </div>
@@ -28,7 +28,7 @@ const Table = () => {
           </div>
         </div>
         <div className="row photo">
-          <p className='first'>Unlimited Photo Upload</p>
+          <h4 className='first'>Unlimited Photo Upload</h4>
           <div className='check x1'>
             <img src={Check} />
           </div>
@@ -40,7 +40,8 @@ const Table = () => {
           </div>
         </div>
         <div className="row custom">
-          <p className='first'>Embedding custom content</p>
+          <h4 className='first'>Embedding custom content</h4>
+          <div className='check x1' /> 
           <div className='check x2'>
             <img src={Check} />
           </div>
@@ -49,7 +50,8 @@ const Table = () => {
           </div>
         </div>
         <div className="row meta">
-          <p className='first'>Customize Metadata</p>
+          <h4 className='first'>Customize Metadata</h4>
+          <div className='check x1' />
           <div className='check x2'>
             <img src={Check} />
           </div>
@@ -58,25 +60,33 @@ const Table = () => {
           </div>
         </div>
         <div className="row metrics">
-          <p className='first'>Advanced Metrics</p>
+          <h4 className='first'>Advanced Metrics</h4>
+          <div className='check x1' />
+          <div className='check x2' />
           <div className='check x3'>
             <img src={Check} />
           </div>
         </div>
         <div className="row photo">
-          <p className='first'>Photo downloads</p>
+          <h4 className='first'>Photo downloads</h4>
+          <div className='check x1' />
+          <div className='check x2' />
           <div className='check x3'>
             <img src={Check} />
           </div>
         </div>
         <div className="row indexing">
-          <p className='first'>Search Engine Indexing</p>
+          <h4 className='first'>Search Engine Indexing</h4>
+          <div className='check x1' />
+          <div className='check x2' />
           <div className='check x3'>
             <img src={Check} />
           </div>
         </div>
         <div className="row indexing">
-          <p className='first'>Custom Analytics</p>
+          <h4 className='first'>Custom Analytics</h4>
+          <div className='check x1' />
+          <div className='check x2' />
           <div className='check x3'>
             <img src={Check} />
           </div>

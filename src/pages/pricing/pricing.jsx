@@ -4,6 +4,7 @@ import Banner from '../../components/banner/banner'
 import Prices from '../../components/prices/prices'
 import PriceCard from '../../components/price-card/price-card'
 import Table from '../../components/table/table'
+import FullImgBanner from '../../components/full-img-banner/full-img-banner'
 import { bannerInfo, priceInfo } from './pricing-info'
 
 const Pricing = () => {
@@ -18,6 +19,7 @@ const Pricing = () => {
         }
       </Prices>
       <Table />
+      <FullImgBanner />
     </div>
   )
 }
