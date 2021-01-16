@@ -4,7 +4,8 @@ import Hero from '../../assets/pricing/desktop/hero.jpg'
 export const bannerInfo = {
   title: 'Pricing',
   body: 'Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.',
-  img: Hero
+  img: Hero,
+  sideStripe: true
 }
 
 export const priceInfo = [

@@ -9,7 +9,7 @@
     background: #000;
     color: #fff;
     width: 65rem;
-    padding: 4rem;
+    padding: 17.5rem 4rem;
     position: relative;
     &.bg-white {
       background: #fff;
@@ -43,13 +43,36 @@
       object-fit: cover;
     }
   }
-  // Switch sides of img and text
+  // Switch sides of img and text when switchSide prop is passed
   &.switch {
     .side-a {
       order: 2;
     }
     .side-b {
       order: 1;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px)  {
+  .banner {
+    flex-direction: column;
+    .side-a {
+      width: 100%;
+      order: 2;
+      padding: 7rem 3.3rem;
+      .wrap {
+        h1 {
+          font-size: 3.2rem;
+          line-height: 40px;
+          letter-spacing: 3.33px;
+        }
+      }
+    }
+    .side-b {
+      width: 100%;
+      min-height: 300px;
+      flex-shrink: unset;
     }
   }
 }

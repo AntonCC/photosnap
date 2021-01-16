@@ -1,20 +1,3 @@
-// .gems {
-//   padding: 12rem 9rem;
-//   display: flex;
-//   background: #fff;
-//   justify-content: space-between;
-//   align-items: baseline;
-// }
-
-// @media only screen and (max-width: 950px) {
-//   .gems {
-//     padding: 4rem 0;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//   }
-// }
-
 .gems {
   padding: 12rem 9rem;
   display: grid;
@@ -29,5 +12,11 @@
     grid-template-columns: repeat(2, 1fr);
     // grid-template-columns: 1fr;
     justify-items: center;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .gems {
+    grid-template-columns: 1fr;
   }
 }
