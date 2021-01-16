@@ -38,6 +38,9 @@
       text-align: center;
     }
   }
+  .btn > * {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 830px) {
@@ -59,8 +62,30 @@
       position: absolute;
       right: 4.1rem;
       top: 4.1rem;
-      .per-month, per-year {
+      .per-month, .per-year {
         text-align: end;
+      }
+    }
+    .btn {
+      width: 100%;
+      max-width: 270px;
+    }
+  }
+}
+
+@media only screen and(max-width: 620px) {
+  .price-card {
+    justify-content: center;
+    align-items: center;
+    .plan, .description {
+      text-align: center;
+    }
+    .price-group {
+      position: unset;
+      right: unset;
+      top: unset;
+      .per-month, .per-year {
+        text-align: center;
       }
     }
   }

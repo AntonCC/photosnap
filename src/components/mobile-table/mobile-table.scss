@@ -1,0 +1,26 @@
+.mobile-table {
+  margin: 0 3.9rem 6.4rem 3.9rem;
+  h4 {
+    text-transform: uppercase;
+  }
+  .title {
+    padding-bottom: 2.3rem;
+    border-bottom: 1px solid #333;
+  }
+  .row {
+    padding: 2.3rem 0;
+    border-bottom: 1px solid #dfdfdf;
+    .feature {
+      margin-bottom: 1.6rem;
+    }
+    .checks {
+      display: flex;
+      .type {
+        width: 100%;
+        p {
+          margin-bottom: .8rem;
+        }
+      }
+    }
+  }
+}

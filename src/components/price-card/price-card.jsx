@@ -1,12 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './price-card.scss'
 import SquareBtn from '../square-btn/square-btn'
 
 const PriceCard = ({ title, body, priceMonth, priceYear, slideSwitch, active }) => {
-  useEffect(() => {
-    console.log(slideSwitch)
-  }, [slideSwitch])
-
   return (
     <div className={`price-card ${active ? 'active' : ''}`}>
       <h2 className='plan'>{ title }</h2>
@@ -26,10 +22,11 @@ const PriceCard = ({ title, body, priceMonth, priceYear, slideSwitch, active }) 
             </span>
           )
       }
-
-      <SquareBtn inverse={ active }>
-        Pick Plan
-      </SquareBtn>
+      <div className="btn">
+        <SquareBtn inverse={ active }>
+          Pick Plan
+        </SquareBtn>
+      </div>
     </div>
   )
 }

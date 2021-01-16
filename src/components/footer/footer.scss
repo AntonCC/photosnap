@@ -28,7 +28,13 @@
       left: 0;
       bottom: 0;
       svg {
+        cursor: pointer;
         margin-right: 1rem;
+        &:hover {
+          path {
+            fill: #aaa;
+          }
+        }
         path {
           fill: #fff;
         }
@@ -61,6 +67,48 @@
         li {
           margin-right: 2.6rem;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .footer {
+    .inner {
+      justify-content: center;
+      align-items: center;
+      .logo {
+        order: 1;
+        margin: 0 0 3.2rem 0;
+      }
+      ul {
+        order: 3;
+        margin-bottom: 10rem;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        li {
+          margin: 0 0 1.9rem 0;
+        }
+      }
+      .socials {
+        order: 2;
+        position: unset;
+        left: unset;
+        bottom: unset;
+        margin: 0 0 4.9rem 0;
+      }
+      .btn {
+        order: 4;
+        position: unset;
+        right: unset;
+        margin: 0 0 3.2rem 0;
+      }
+      .copyright {
+        order: 5;
+        position: unset;
+        right: unset;
+        bottom: unset;
       }
     }
   }
