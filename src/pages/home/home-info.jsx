@@ -18,6 +18,7 @@ export const bannerInfo = [
     body: 'Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.',
     img: Man,
     btnText: 'Get an invite',
+    linkTo: '/invite',
     sideStripe: true
   },
   {
@@ -25,6 +26,7 @@ export const bannerInfo = [
     body: 'We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.',
     img: Laptop,
     btnText: 'View the stories',
+    linkTo: '/stories',
     bgWhite: true,
     switchSide: true
   },
@@ -33,6 +35,7 @@ export const bannerInfo = [
     body: 'Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it.',
     img: Design,
     btnText: 'View the stories',
+    linkTo: '/stories',
     bgWhite: true
   }
 ]

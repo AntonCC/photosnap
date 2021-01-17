@@ -62,16 +62,30 @@
       order: 2;
       padding: 7rem 3.3rem;
       .wrap {
+        position: relative;
         h1 {
           font-size: 3.2rem;
           line-height: 40px;
           letter-spacing: 3.33px;
         }
+        &::after {
+          position: absolute;
+          top: -7rem;
+          left: 0;
+          content: '';
+          height: 7px;
+          width: 200px;
+          background: linear-gradient(to right, rgba(255,197,147,1) 0%, rgba(188,113,152,1) 55%, rgba(90,119,255,1) 100%);
+        }
+      }
+      &.side-stripe::after {
+        display: none;
       }
     }
     .side-b {
       width: 100%;
       min-height: 300px;
+      max-height: 400px;
       flex-shrink: unset;
     }
   }

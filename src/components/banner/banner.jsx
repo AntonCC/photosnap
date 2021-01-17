@@ -1,9 +1,10 @@
 import React from 'react'
 import './banner.scss'
 import Button from '../button/button'
+import NavLink from '../button/button'
 
 
-const Banner = ({ title, body, img, btnText, bgWhite, switchSide, sideStripe }) => {
+const Banner = ({ title, body, img, btnText, linkTo, bgWhite, switchSide, sideStripe }) => {
 
   return (
     <div className={`banner ${switchSide ? 'switch' : ''}`}>
@@ -13,7 +14,7 @@ const Banner = ({ title, body, img, btnText, bgWhite, switchSide, sideStripe }) 
           <p style={!btnText ? {marginBottom: 0} : null}>{ body }</p>
           {
             btnText && (
-              <Button bgWhite={bgWhite} >
+              <Button bgWhite={bgWhite} linkTo={linkTo} >
                 <h4>{ btnText }</h4>
               </Button>
             )

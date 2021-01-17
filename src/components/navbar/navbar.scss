@@ -3,7 +3,8 @@
   height: 72px;
   margin: 0 auto;
   background: #fff;
-  .container .desktop {
+  z-index: 5;
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,13 +55,12 @@
       position: absolute;
       height: 0;
       width: 100%;
-      opacity: 0;
       background: #fff;
       z-index: 5;
       transition: all 250ms ease-in-out;
       overflow: hidden;
       &.active {
-        height: 200px;
+        height: 250px;
         opacity: 1;
       }
     }

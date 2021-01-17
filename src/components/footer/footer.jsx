@@ -30,7 +30,7 @@ const Footer = () => {
           <Instagram />
         </div>
         <div className="btn">
-          <Button className='test'>
+          <Button linkTo='/invite'>
             <h4>Get an invite</h4>
           </Button>
         </div>

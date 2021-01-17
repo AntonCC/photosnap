@@ -5,18 +5,22 @@ import { ReactComponent as Logo } from '../../assets/shared/desktop/logo.svg'
 import SquareBtn from '../square-btn/square-btn'
 import MobileNavbar from '../mobile-navbar/mobile-navbar'
 
-const Navbar = () => {
-  const [mobileActive, setMobileActive] = useState()
+const Navbar = ({ mobileActive, handleMobileNav }) => {
 
-  const handleClick = () => {
-    setMobileActive(!mobileActive)
+  // Seperate handler for logo so it doesn't open mobile nav. Only want it to close when mobile nav is already open.
+  const handleLogoClick = () => {
+    if(!mobileActive) {
+      return
+    } else {
+      handleMobileNav()
+    }
   }
 
   return (
     <div className='navbar'>
-      <div className="container desktop">
+      <div className="container">
         <div className="logo">
-          <NavLink to='/'>
+          <NavLink to='/' onClick={handleLogoClick}>
             <Logo />
           </NavLink>
         </div>
@@ -28,18 +32,20 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="btn">
-          <SquareBtn>
-            Get an invite
-          </SquareBtn>
+          <NavLink to='/features'>
+            <SquareBtn>
+              Get an invite
+            </SquareBtn>
+          </NavLink>
         </div>
-        <div className="menu" onClick={handleClick}>
+        <div className="menu" onClick={handleMobileNav}>
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>
         </div>
       </div>
       <div className={`slide-out ${mobileActive ? 'active' : ''}`}>
-        <MobileNavbar />
+        <MobileNavbar mobileActive={mobileActive} handleMobileNav={handleMobileNav} />
       </div>
     </div>
   )
