@@ -1,0 +1,21 @@
+.mobile-navbar {
+  .mobile-nav-links {
+    width: 100%;
+    li {
+      text-align: center;
+      padding: 2rem 0;
+      a {
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #000;
+      }
+    }
+  }
+  .line {
+    height: 2px;
+    width: 100%;
+    background: #000;
+  }
+}
