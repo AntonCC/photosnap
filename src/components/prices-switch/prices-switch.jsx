@@ -1,13 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './prices-switch.scss'
 
 const PricesSwitch = ({ slideSwitch, handleClick }) => {
-  // const [slideSwitch, setSlideSwitch] = useState(false)
-
-  // const handleClick = () => {
-  //   setSlideSwitch(!slideSwitch)
-  // }
-
   return (
     <div className='prices-switch'>
       <h3 className={`monthly ${!slideSwitch ? 'active' : ''}`}>Monthly</h3>

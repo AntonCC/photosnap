@@ -1,6 +1,5 @@
 import React from 'react'
 import './gem.scss'
-import Test from '../../assets/features/desktop/responsive.svg'
 
 const Gem = ({ title, body, img}) => {
   return (

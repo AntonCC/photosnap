@@ -13,15 +13,15 @@ const MobileTable = () => {
         <div className="checks">
           <div className="type">
             <p>Basic</p>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
           <div className="type">
             <p>Pro</p>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
           <div className="type">
             <p>Business</p>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
         </div>
       </div>
@@ -30,15 +30,15 @@ const MobileTable = () => {
         <div className="checks">
           <div className="type">
             <p>Basic</p>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
           <div className="type">
             <p>Pro</p>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
           <div className="type">
             <p>Business</p>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
         </div>
       </div>
@@ -50,11 +50,11 @@ const MobileTable = () => {
           </div>
           <div className="type">
             <p>Pro</p>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
           <div className="type">
             <p>Business</p>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
         </div>
       </div>
@@ -66,11 +66,11 @@ const MobileTable = () => {
           </div>
           <div className="type">
             <p>Pro</p>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
           <div className="type">
             <p>Business</p>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@ const MobileTable = () => {
           </div>
           <div className="type">
             <p>Business</p>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
         </div>
       </div>
@@ -100,7 +100,7 @@ const MobileTable = () => {
           </div>
           <div className="type">
             <p>Business</p>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
         </div>
       </div>
@@ -115,7 +115,7 @@ const MobileTable = () => {
           </div>
           <div className="type">
             <p>Business</p>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
         </div>
       </div>
@@ -130,7 +130,7 @@ const MobileTable = () => {
           </div>
           <div className="type">
             <p>Business</p>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
         </div>
       </div>

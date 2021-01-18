@@ -1,8 +1,6 @@
 import React from 'react'
 import './banner.scss'
 import Button from '../button/button'
-import NavLink from '../button/button'
-
 
 const Banner = ({ title, body, img, btnText, linkTo, bgWhite, switchSide, sideStripe }) => {
 
@@ -24,7 +22,7 @@ const Banner = ({ title, body, img, btnText, linkTo, bgWhite, switchSide, sideSt
       <div className="side-b">
         <picture>
           {/* <source media='(max-width: 1000px)' srcset={Hero} /> */}
-          <img src={ img } />
+          <img src={ img } alt='banner' />
         </picture>
       </div>
     </div>

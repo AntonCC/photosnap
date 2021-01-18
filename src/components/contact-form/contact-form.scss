@@ -1,0 +1,45 @@
+.contact-form {
+  form {
+    max-width: 445px;
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2.4rem;
+      .contact-error {
+        color: red;
+        font-size: 1.1rem;
+        font-style: italic;
+        opacity: .8;
+      }
+      input {
+        // width: 100%;
+      }
+      &.checkbox {
+        flex-direction: row;
+        justify-items: flex-start;
+        align-items: center;
+        .box {
+          background: none;
+          border: none;
+          outline: none;
+          margin-right: 2.6rem;
+          cursor: pointer;
+        }
+        label {
+          position: relative;
+          font-size: 1.5rem;
+          line-height: 28px;
+          opacity: .6;
+          max-width: 395px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          &.italic {
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+}

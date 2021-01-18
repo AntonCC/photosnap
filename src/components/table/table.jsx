@@ -18,45 +18,45 @@ const Table = () => {
         <div className="row story">
           <h4 className='first'>Unlimited Story Posting</h4>
           <div className='check x1'>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
           <div className='check x2'>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
           <div className='check x3'>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
         </div>
         <div className="row photo">
           <h4 className='first'>Unlimited Photo Upload</h4>
           <div className='check x1'>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
           <div className='check x2'>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
           <div className='check x3'>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
         </div>
         <div className="row custom">
           <h4 className='first'>Embedding custom content</h4>
           <div className='check x1' /> 
           <div className='check x2'>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
           <div className='check x3'>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
         </div>
         <div className="row meta">
           <h4 className='first'>Customize Metadata</h4>
           <div className='check x1' />
           <div className='check x2'>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
           <div className='check x3'>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
         </div>
         <div className="row metrics">
@@ -64,7 +64,7 @@ const Table = () => {
           <div className='check x1' />
           <div className='check x2' />
           <div className='check x3'>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
         </div>
         <div className="row photo">
@@ -72,7 +72,7 @@ const Table = () => {
           <div className='check x1' />
           <div className='check x2' />
           <div className='check x3'>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
         </div>
         <div className="row indexing">
@@ -80,7 +80,7 @@ const Table = () => {
           <div className='check x1' />
           <div className='check x2' />
           <div className='check x3'>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
         </div>
         <div className="row indexing">
@@ -88,7 +88,7 @@ const Table = () => {
           <div className='check x1' />
           <div className='check x2' />
           <div className='check x3'>
-            <img src={Check} />
+            <img src={Check} alt='check'/>
           </div>
         </div>
       </div>

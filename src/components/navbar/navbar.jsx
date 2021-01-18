@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './navbar.scss'
 import { NavLink } from 'react-router-dom'
 import { ReactComponent as Logo } from '../../assets/shared/desktop/logo.svg'
@@ -7,7 +7,7 @@ import MobileNavbar from '../mobile-navbar/mobile-navbar'
 
 const Navbar = ({ mobileActive, handleMobileNav }) => {
 
-  // Seperate handler for logo so it doesn't open mobile nav. Only want it to close when mobile nav is already open.
+  // Seperate handler for logo so it doesn't open mobile nav. 
   const handleLogoClick = () => {
     if(!mobileActive) {
       return
@@ -32,7 +32,7 @@ const Navbar = ({ mobileActive, handleMobileNav }) => {
           </ul>
         </div>
         <div className="btn">
-          <NavLink to='/features'>
+          <NavLink to='/invite'>
             <SquareBtn>
               Get an invite
             </SquareBtn>

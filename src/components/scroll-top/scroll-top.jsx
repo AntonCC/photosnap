@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { useEffect } from 'react'
 import { withRouter } from 'react-router-dom'
 
@@ -10,6 +11,7 @@ const ScrollTop = ({ history }) => {
     return () => {
       unlisten()
     }
+    // eslint-disable-next-line
   }, [])
 
   return null
