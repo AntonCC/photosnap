@@ -15,6 +15,8 @@ const ContactForm = () => {
 
   return (
     <div className='contact-form'>
+      <h2>Get in touch</h2>
+      <p>Fill out the from below to get in touch</p>
       <Formik
         initialValues={{ name: '', email: '', companyName: '', title: '', message: ''}}
         validationSchema={ContactSchema}

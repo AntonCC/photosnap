@@ -1,6 +1,15 @@
 .contact-form {
+  width: 100%;
+  h2 {
+    margin-bottom: 1rem;
+  }
+  p {
+    opacity: .9;
+    margin-bottom: 2rem;
+  }
   form {
-    max-width: 445px;
+    width: 100%;
+    // max-width: 445px;
     .form-group {
       display: flex;
       flex-direction: column;
@@ -12,7 +21,13 @@
         opacity: .8;
       }
       input {
-        // width: 100%;
+        height: 40px;
+        border: 1px solid #dedede;
+        border-radius: 5px;
+        padding: 1rem;
+        &:placeholder-shown {
+          padding: 1rem;
+        }
       }
       &.checkbox {
         flex-direction: row;

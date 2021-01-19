@@ -1,0 +1,33 @@
+.contact-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  .info, .address {
+    width: 100%;
+    text-align: left;
+  }
+  p {
+    opacity: .9;
+  }
+  .info {
+    margin-bottom: 3rem;
+    h2 {
+      margin-bottom: 1rem;
+    }
+    p {
+      strong {
+        color: #5a77ff;
+      }
+    }
+  }
+  .address {
+    .usa {
+      margin-bottom: 2rem;
+    }
+    h3 {
+      margin-bottom: .5rem;
+    }
+  }
+}
