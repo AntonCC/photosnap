@@ -20,10 +20,8 @@ const Banner = ({ title, body, img, btnText, linkTo, bgWhite, switchSide, sideSt
         </div>
       </div>
       <div className="side-b">
-        <picture>
-          {/* <source media='(max-width: 1000px)' srcset={Hero} /> */}
-          <img src={ img } alt='banner' />
-        </picture>
+        {/* <source media='(max-width: 1000px)' srcset={Hero} /> */}
+        <img src={ img } alt='banner' />
       </div>
     </div>
   )

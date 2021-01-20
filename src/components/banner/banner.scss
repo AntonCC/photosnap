@@ -37,10 +37,12 @@
   .side-b {
     width: 86rem;
     flex-shrink: 2.5;
+    // overflow: hidden;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
     }
   }
   // Switch sides of img and text when switchSide prop is passed
@@ -84,9 +86,12 @@
     }
     .side-b {
       width: 100%;
-      min-height: 300px;
+      height: 100%;
       max-height: 400px;
       flex-shrink: unset;
+      img {
+        display: block;
+      }
     }
   }
 }

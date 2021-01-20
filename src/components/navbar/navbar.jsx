@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useEffect, useContext } from 'react'
 import './navbar.scss'
 import { NavLink } from 'react-router-dom'
 import { ReactComponent as Logo } from '../../assets/shared/desktop/logo.svg'
@@ -8,6 +8,12 @@ import MobileNavbar from '../mobile-navbar/mobile-navbar'
 
 const Navbar = ({ mobileActive, handleMobileNav }) => {
   const [width, setWidth] = useContext(WidthContext)
+
+  useEffect(() => {
+    if(width > 845 && mobileActive) {
+      handleMobileNav()
+    }
+  }, [width])
 
   // Seperate handler for logo so it doesn't open mobile nav. 
   const handleLogoClick = () => {

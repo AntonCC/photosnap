@@ -14,7 +14,7 @@ const MobileNavbar = ({ mobileActive, handleMobileNav }) => {
         </ul>
         <div className="line"></div>
         <div className="btn">
-          <NavLink to='/features' onClick={handleMobileNav}>
+          <NavLink to='/invite' onClick={handleMobileNav}>
             <SquareBtn>Get an invite</SquareBtn>
           </NavLink>
         </div>
