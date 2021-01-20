@@ -9,14 +9,12 @@ const ContactForm = () => {
     name: Yup.string().trim().max(30).required("* This field can't be empty"),
     email: Yup.string().trim().email('* Invalid email').required("* This field can't be empty"),
     companyName: Yup.string().trim().max(30, "* This field can't exceed 30 characters"),
-    message: Yup.string().trim().max(500),
-    signUp: Yup.boolean()
   })
 
   return (
     <div className='contact-form'>
-      <h2>Get in touch</h2>
-      <p>Fill out the from below to get in touch</p>
+      <h2>Get an invite</h2>
+      <p>Fill out the from below to get an invite</p>
       <Formik
         initialValues={{ name: '', email: '', companyName: '', title: '', message: ''}}
         validationSchema={ContactSchema}
@@ -49,16 +47,6 @@ const ContactForm = () => {
               <ErrorMessage name='companyName'>
                 {msg => <div className='contact-error'>{ msg }</div>}
               </ErrorMessage>
-            </div>
-            <div className="form-group">
-              <Field name='message' placeholder='Message' />
-              <ErrorMessage name='message'>
-                {msg => <div className='contact-error'>{ msg }</div>}
-              </ErrorMessage>
-            </div>
-            <div className="form-group checkbox">
-              <Field name='signUp' type='checkbox' className='box' />
-              <label className='italic'>Stay label-to-date with company announcments and updates to our API</label>
             </div>
             <div className="btn">
               <SquareBtn>
