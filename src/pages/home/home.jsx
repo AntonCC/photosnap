@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import Banner from '../../components/banner/banner'
 import Cards from '../../components/cards/cards'
 import Card from '../../components/card/card'
@@ -8,7 +9,11 @@ import { bannerInfo, cardInfo, gemInfo } from './home-info'
 
 const Home = () => {
   return (
-    <div className='home wrap'>
+    <motion.div className='home wrap'
+      exit={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+    >
       {
         bannerInfo.map(info => (
           <Banner {...info} />
@@ -28,7 +33,7 @@ const Home = () => {
           ))
         }
       </Gems>
-    </div>
+    </motion.div>
   )
 }
 

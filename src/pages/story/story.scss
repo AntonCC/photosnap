@@ -1,0 +1,27 @@
+.story {
+  background: #fff;
+  .story-text {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 10rem 0;
+    p {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      line-height: 3.5rem;
+      opacity: .8;
+      padding: 0 4rem;
+    } 
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .story {
+    .story-text {
+      padding: 5rem 0;
+      p {
+        font-size: 1.6rem;
+        line-height: 3rem;
+      }
+    }
+  }
+}

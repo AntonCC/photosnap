@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import { motion } from 'framer-motion'
 import { WidthContext } from '../../contexts/widthContext'
 import FeaturedCard from '../../components/featured-card/featured-card'
 import FeaturedCardMobile from '../../components/featured-card-mobile/featured-card-mobile'
@@ -10,7 +11,11 @@ const Stories = () => {
   const [width, setWidth] = useContext(WidthContext)
 
   return (
-    <div className='stories wrap'>
+    <motion.div className='stories wrap'
+      exit={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+    >
       {
         width > 575
           ? <FeaturedCard />
@@ -23,7 +28,7 @@ const Stories = () => {
           ))
         }
       </Cards>
-    </div>
+    </motion.div>
   )
 }
 

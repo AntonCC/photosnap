@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './pricing.scss'
+import { motion } from 'framer-motion'
 import Banner from '../../components/banner/banner'
 import Prices from '../../components/prices/prices'
 import PriceCard from '../../components/price-card/price-card'
@@ -29,7 +30,11 @@ const Pricing = () => {
   }
 
   return (
-    <div className='pricing wrap'>
+    <motion.div className='pricing wrap'
+      exit={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+    >
       <Banner {...bannerInfo} />
       <Prices >
         {
@@ -44,7 +49,7 @@ const Pricing = () => {
           : <Table />
       }
       <FullImgBanner />
-    </div>
+    </motion.div>
   )
 }
 

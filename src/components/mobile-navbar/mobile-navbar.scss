@@ -3,6 +3,7 @@
     width: 90%;
     margin: 0 auto;
     opacity: 0;
+    display: none;
     transition: all 250ms ease-in-out;
     .mobile-nav-links {
       width: 100%;
@@ -36,6 +37,7 @@
     }
     &.active {
       opacity: 1;
+      display: block;
     }
   }
 }
