@@ -15,6 +15,8 @@ import Galaxy from '../../assets/stories/desktop/milky-way.jpg'
 import Forest from '../../assets/stories/desktop/dark-forest.jpg'
 import Somwarpet from '../../assets/stories/desktop/somwarpet.jpg'
 import Dreams from '../../assets/stories/desktop/land-of-dreams.jpg'
+// Featured Card
+import Moon from '../../assets/stories/desktop/moon-of-appalacia_cut.jpg'
 
 export const cardInfo = [
   {
@@ -113,4 +115,13 @@ export const cardInfo = [
     author: 'William Malcolm',
     img: Dreams
   },
+]
+
+export const featuredCardInfo = [
+  {
+    id: 100,
+    title: 'Hazy Full Moon of Apalachia',
+    author: 'John Appleseed',
+    img: Moon
+  }
 ]

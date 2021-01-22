@@ -14,13 +14,15 @@ const Footer = () => {
     <footer className='footer wrap'>
       <div className="inner">
         <div className="logo">
-          <Logo />
+          <NavLink to='/'>
+            <Logo />
+          </NavLink>
         </div>
         <ul>
           <li><NavLink to='/'>Home</NavLink></li>
-          <li><NavLink to='/'>Stories</NavLink></li>
-          <li><NavLink to='/'>Features</NavLink></li>
-          <li><NavLink to='/'>Pricing</NavLink></li>
+          <li><NavLink to='/stories'>Stories</NavLink></li>
+          <li><NavLink to='/features'>Features</NavLink></li>
+          <li><NavLink to='/pricing'>Pricing</NavLink></li>
         </ul>
         <div className="socials">
           <Facebook />

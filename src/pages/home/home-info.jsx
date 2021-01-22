@@ -42,21 +42,25 @@ export const bannerInfo = [
 
 export const cardInfo = [
   {
+    id: 1,
     title: 'The Mountains',
     author: 'John Appleseed',
     img: Mountain
   },
   {
+    id: 2,
     title: 'Sunset Cityscapes',
     author: 'Benjamin Cruz',
     img: City
   },
   {
+    id: 3,
     title: '18 Days Voyage',
     author: 'Alexei Borodin',
     img: Days
   },
   {
+    id: 4,
     title: 'Architecturals',
     author: 'Samantha Brooke',
     img: Architecture

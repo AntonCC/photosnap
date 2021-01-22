@@ -10,7 +10,7 @@ const FeaturedCardMobile = () => {
         <img src={Moon} alt="Moon"/>
       </div>
       <div className="bottom">
-        <h4>Last Month's Featured Story</h4>
+        <h4 className='last-month'>Last Month's Featured Story</h4>
         <h1 className='title'>Hazy Full Moon of Apalachia</h1>
         <span className='date-author'>
           <p>March 2nd 2020</p>

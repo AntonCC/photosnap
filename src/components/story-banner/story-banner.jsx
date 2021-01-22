@@ -1,6 +1,5 @@
 import React from 'react'
 import './story-banner.scss'
-import Test from '../../assets/stories/desktop/18-days-voyage.jpg'
 
 const StoryBanner = ({ title, author, img }) => {
   return (

@@ -11,14 +11,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 2rem;
     h1 {
       margin-bottom: 2rem;
+      text-align: center;
+    }
+    h3 {
+      text-align: center;
     }
   }
   .side-b {
     width: 30%;
+    height: 600px;
     img {
       width: 100%;
+      height: 100%;
       object-fit: cover;
       object-position: center;
       display: block;

@@ -1,5 +1,6 @@
 import React from 'react'
 import './featured-card.scss'
+import { NavLink } from 'react-router-dom'
 import Button from '../button/button'
 import Moon from '../../assets/stories/desktop/moon-of-appalacia.jpg'
 
@@ -14,9 +15,11 @@ const FeaturedCard = () => {
           <strong>by John Appleseed</strong>
         </span>
         <p className='description'>The dissected plateau area, while not actually made up of geological mountains, is popularly called "mountains," especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.</p>
-        <Button>
-          <h4>Read the Story</h4>
-        </Button>
+        <NavLink to='/story/100'>
+          <Button>
+            <h4>Read the Story</h4>
+          </Button>
+        </NavLink>
       </div>
     </div>
   )

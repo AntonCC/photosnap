@@ -4,12 +4,20 @@ import './story.scss'
 import { motion } from 'framer-motion'
 import StoryBanner from '../../components/story-banner/story-banner'
 import FullImgBanner from '../../components/full-img-banner/full-img-banner'
-import { cardInfo } from '../stories/stories-info'
+import { cardInfo, featuredCardInfo } from '../stories/stories-info'
 
 const Story = () => {
   let { id } = useParams()
   const selectedStory = cardInfo.find(info => info.id === parseInt(id))
+  const selectedFeaturedStory = featuredCardInfo.find(info => info.id === parseInt(id))
 
+  const whichStory = () => {
+    if(selectedStory) {
+      return selectedStory
+    } else {
+      return selectedFeaturedStory
+    }
+  }
 
   return (
     <motion.div className='story wrap'
@@ -17,7 +25,7 @@ const Story = () => {
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
     >
-      <StoryBanner {...selectedStory} />
+      <StoryBanner  {...whichStory()}/>
       <div className="story-text">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus eros sed magna ullamcorper tincidunt. Ut cursus congue nisi sit amet eleifend. Aenean in dapibus mauris. Etiam ut pellentesque nisi. Ut orci odio, ullamcorper sit amet vehicula a, molestie sed lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin vehicula viverra ante eu cursus. Vestibulum sed nisl sodales nibh convallis cursus. Nulla convallis ac nisi vel faucibus. 
