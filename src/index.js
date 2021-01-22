@@ -7,7 +7,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename='/photosnap'>
       <WidthProvider>
         <App />
       </WidthProvider>
