@@ -5,6 +5,7 @@ import { ReactComponent as Logo } from '../../assets/shared/desktop/logo.svg'
 import { WidthContext } from '../../contexts/widthContext'
 import SquareBtn from '../square-btn/square-btn'
 import MobileNavbar from '../mobile-navbar/mobile-navbar'
+import { ReactComponent as Close } from '../../assets/shared/mobile/close.svg'
 
 const Navbar = ({ mobileActive, handleMobileNav }) => {
   const [width, setWidth] = useContext(WidthContext)
@@ -46,11 +47,22 @@ const Navbar = ({ mobileActive, handleMobileNav }) => {
             </SquareBtn>
           </NavLink>
         </div>
-        <div className="menu" onClick={handleMobileNav}>
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
-        </div>
+        {
+          mobileActive
+            ? (
+              <div className='close-menu' onClick={handleMobileNav}>
+                <Close />
+              </div>
+            )
+            : (
+              <div className="menu" onClick={handleMobileNav}>
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
+              </div>
+            )
+
+        }
       </div>
       <div className={`slide-out ${mobileActive ? 'active' : ''}`}>
         <MobileNavbar mobileActive={mobileActive} handleMobileNav={handleMobileNav} />
