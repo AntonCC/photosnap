@@ -35,9 +35,9 @@ const Navbar = ({ mobileActive, handleMobileNav }) => {
         </div>
         <div className="nav-links">
           <ul>
-            <li><NavLink to='/stories'>Stories</NavLink></li>
-            <li><NavLink to='/features'>Features</NavLink></li>
-            <li><NavLink to='/pricing'>Pricing</NavLink></li>
+            <li><NavLink tag={NavLink} activeClassName='active' to='/stories'>Stories</NavLink></li>
+            <li><NavLink tag={NavLink} activeClassName='active' to='/features'>Features</NavLink></li>
+            <li><NavLink tag={NavLink} activeClassName='active' to='/pricing'>Pricing</NavLink></li>
           </ul>
         </div>
         <div className="btn">

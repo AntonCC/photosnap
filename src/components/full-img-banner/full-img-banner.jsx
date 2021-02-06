@@ -8,7 +8,7 @@ const FullImgBanner = () => {
     <div className='full-img-banner' style={{ background: `linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url(${Test}) no-repeat center/cover` }}>
       <div className="content">
         <h1>We're in beta. Get your invite today!</h1>
-        <Button>
+        <Button linkTo='/invite'>
           <h4>Get an invite</h4>
         </Button>
       </div>

@@ -9,7 +9,7 @@ const ContactInfo = () => {
         <p>
           For any questions or support:
           <br/>
-          Email us at <strong>photosnap@example.com</strong>
+          Email us at <strong><a href="mailto: photosnap@example.com">photosnap@example.com</a></strong>
           <br/>
           Call us at <strong>1.999.888.7777</strong>
         </p>
