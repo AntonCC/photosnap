@@ -11,6 +11,8 @@
   svg {
     height: 12px;
     width: 42px;
+    margin-bottom: .25rem;
+    transition: all 200ms ease-in-out; 
     path {
       stroke: #fff;
     }
@@ -21,6 +23,11 @@
     }
     svg path {
       stroke: #000;
+    }
+  }
+  &:hover {
+    svg {
+      transform: translateX(1.5rem);
     }
   }
 }
